@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(33, 22, 182),blue);
+    
+    
+   
+    clip-path: polygon(0% 15%, 15% 15%, 0 0, 98% 1%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 99% 99%, 0 99%, 15% 85%, 0% 85%);
+    
+}
+#logoBox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    
+    background-color: rgb(189, 159, 159);
+}
+#h1header{
+    float: right;
+    line-height: 100px;
+    padding:0 15px;
+}
+#logo{
+    height: 100%;
+    border-radius: 50%;
+    float: right;
+}
+header a{
+    color: blue;
+}
+
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  display: inline-block;
+
+
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+   
+    text-align: center;
+
+
+}
+nav a:hover{
+    background-color: white;
+    color: blue;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(33, 22, 182);
+    
+    border-top: 5px solid white;
+    animation-name:changeBackground ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: cadetblue;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+    height: 60%;
+    margin-top: 10px;
+
+}
+#h1aside{
+    padding-top: 20px;
+    border-bottom: 3px solid brown;
+}
+#article{
+
+    width: 70%;
+    
+    height: 450px;
+    float: right;
+    position: relative;
+}
+#box{
+    position: absolute;
+    width: 400px;
+    height: 220px;
+    background-color: blanchedalmond;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px ;
+
+}
+#box p{
+    padding-top: 20px;
+    
+}
+#contact-box{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+   
+    
+}
+#contact-box img{
+    width: 50px;
+  
+    
+    margin-left: 5px;
+    
+     
+
+    
+    
+   
+    
+}
+#contact-box img:hover{
+    
+    
+    -webkit-animation: flip-scale-2-hor-bottom 0.5s linear both;
+    animation: flip-scale-2-hor-bottom 0.5s linear both;
+    
+   
+}
+
+
+
+
+
+
+@keyframes changeBackground{
+    0% {
+        background-color: white;
+    }
+    50%{
+        background-color: turquoise;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
+@-webkit-keyframes flip-scale-2-hor-bottom {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    50% {
+      -webkit-transform: translateY(50%) rotateX(90deg) scale(2);
+              transform: translateY(50%) rotateX(90deg) scale(2);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    100% {
+      -webkit-transform: translateY(100%) rotateX(180deg) scale(1);
+              transform: translateY(100%) rotateX(180deg) scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+
+
+
+@media only screen and (min-width:928px) and{
+    #logoBox{
+        width:35%;
+    }
+
+    #article{
+        width:65%;
+    }
+    aside{
+        width:35%;
+    }
+    
+}
+@media only screen and (max-width:927px){
+    #logoBox{
+        width: 40%;
+        
+        
+
+    }
+    #article{
+        width:60%;
+    }
+    aside{
+        width:40%;
+    }
+    
+    
+
+}
+@media only screen and (max-width:702px) {
+    header{
+        height: auto;
+        clip-path: none;
+       
+    }
+    #logoBox{
+        width: 100%;
+        text-align: center;
+        background-color: whitesmoke;
+       border-bottom: 3px double black;
+       
+        
+
+    }
+
+   
+    #h1header{
+        float: none;
+    }
+    #logo{
+        float: none;
+        
+    }
+    span a{
+        text-decoration: none;
+    }
+    aside{
+        float: none;
+        width: 100%;
+
+    }
+    #article{
+        float: none;
+        width: 100%;
+        
+    }
+    nav{
+        width: 100%;
+    }
+
+    #box{
+        background-color: blue;
+        color: white;
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    nav li {
+        display: block;
+        width: 100%;
+        border-bottom: 5px solid white;
+       
+    }
+    
+}
